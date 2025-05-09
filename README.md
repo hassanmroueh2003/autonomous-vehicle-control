@@ -15,8 +15,15 @@ This project includes two real-time computer vision modules developed for an aut
 
 ## 📁 Files Included
 
-- `eye_control.py` — Real-time blink detection using MediaPipe
-- `traffic_light_yolo.py` — YOLOv3-based traffic light and stop sign detection
+- `eye_control.py` — Real-time blink detection using MediaPipe  
+- `traffic_light_yolo.py` — YOLOv3-based traffic light and stop sign detection  
+- `utils.py` — Utility functions for drawing overlays, styled text, and visual effects in OpenCV  
+- `/Simulation Results/` — Folder containing simulation results, screenshots, and videos demonstrating module performance  
+- `/yolo-coco/` — Folder (to be created) containing YOLOv3 files:  
+  - `yolov3.cfg`  
+  - `yolov3.weights` *(must be downloaded separately)*  
+  - `coco.names`  
+
 
 ---
 
