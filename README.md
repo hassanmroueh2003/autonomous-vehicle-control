@@ -59,11 +59,6 @@ Install required packages:
 pip install opencv-python mediapipe numpy
 ```
 
-Or use the provided `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-```
 
 ---
 
@@ -91,7 +86,3 @@ python traffic_light_yolo.py
 
 ```
 
----
-
-Would you like me to generate the full `requirements.txt` and `.gitignore` too, or are you already handling those?
-```
