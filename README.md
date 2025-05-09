@@ -84,5 +84,3 @@ python traffic_light_yolo.py
 
 **Hassan Mroueh** – Computer vision modules developer
 
-```
-
