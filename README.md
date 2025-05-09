@@ -1,32 +1,90 @@
 # Autonomous Vehicle Control Modules
 
-This project contains two Python-based computer vision modules developed as part of an autonomous vehicle prototype running on Raspberry Pi 5. The modules support:
+This project contains two Python-based computer vision modules developed for an autonomous vehicle prototype running on Raspberry Pi 5:
 
-1. **Eye-Controlled Emergency Braking**  
-   Uses blink detection with MediaPipe and OpenCV. If the driver keeps eyes closed for more than 5 seconds, the vehicle stops.
-
-2. **Traffic Light & Stop Sign Detection**  
-   Uses YOLOv3 object detection with color classification in HSV to detect traffic lights and their states (Red, Yellow, Green), as well as stop signs.
+1. **Eye Blink Detection** – Stops the vehicle if the driver keeps their eyes closed for 5 seconds.  
+2. **Traffic Light & Stop Sign Detection** – Uses YOLOv3 and HSV color filtering to detect traffic light states and stop signs.
 
 ---
 
-## 🛠️ Features
+## 🔍 Project Description
 
-- 👁️ Blink detection using eye aspect ratio and face mesh landmarks  
-- 🚦 Traffic light color recognition with YOLO and HSV filtering  
-- 🛑 Stop sign detection using YOLOv3  
-- ⚙️ Integrated with Raspberry Pi 5 and Arduino for real-world deployment
+This project includes two real-time computer vision modules developed for an autonomous vehicle prototype on Raspberry Pi 5. The first module stops the car when the driver’s eyes remain closed for 5 seconds. The second uses YOLOv3 and HSV filtering to detect traffic lights and stop signs.
 
 ---
 
-## 📂 Folder Structure
+## 📁 Files Included
+
+- `eye_control.py` — Real-time blink detection using MediaPipe
+- `traffic_light_yolo.py` — YOLOv3-based traffic light and stop sign detection
+
+---
+
+## ⚠️ YOLOv3 Files Required
+
+To run `traffic_light_yolo.py`, download the following YOLOv3 files and place them in a folder named `yolo-coco/` in the same directory:
+
+1. `yolov3.cfg` – Model configuration  
+2. `yolov3.weights` – Pre-trained model weights  
+3. `coco.names` – Class labels file  
+
+📥 You can get them from: [https://pjreddie.com/darknet/yolo/](https://pjreddie.com/darknet/yolo/)
+
+Your folder structure should look like:
 
 ```bash
-src/
-├── eye_control.py            # Detects blinks and controls car state
-└── traffic_light_yolo.py     # Real-time object detection for traffic lights and stop signs
+project-root/
+├── eye_control.py
+├── traffic_light_yolo.py
+└── yolo-coco/
+    ├── yolov3.cfg
+    ├── yolov3.weights
+    └── coco.names
+````
 
-yolo-coco/
-├── yolov3.cfg
-├── yolov3.weights  # (download separately)
-└── coco.names
+---
+
+## 🧩 Dependencies
+
+Install required packages:
+
+```bash
+pip install opencv-python mediapipe numpy
+```
+
+Or use the provided `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Usage
+
+### Eye Blink Detection
+
+```bash
+python eye_control.py
+```
+
+### Traffic Light & Stop Sign Detection
+
+Ensure you have the YOLO files in `yolo-coco/`, then run:
+
+```bash
+python traffic_light_yolo.py
+```
+
+---
+
+## 👤 Author
+
+**\[Your Name]** – Computer vision modules developer
+
+```
+
+---
+
+Would you like me to generate the full `requirements.txt` and `.gitignore` too, or are you already handling those?
+```
