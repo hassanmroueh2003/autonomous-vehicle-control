@@ -80,7 +80,7 @@ python traffic_light_yolo.py
 
 ## 👤 Author
 
-**\Hassan Mroueh** – Computer vision modules developer
+**Hassan Mroueh** – Computer vision modules developer
 
 ```
 
