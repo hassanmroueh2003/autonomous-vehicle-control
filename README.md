@@ -51,6 +51,18 @@ project-root/
 
 ---
 
+
+## 🚘 Simulation Results
+
+This project simulates control of an autonomous vehicle using eye detection, object recognition, and traffic signal awareness on a Raspberry Pi 5.
+
+| Eye Detection on Hardware | Stop Sign Detection | Pedestrian & Signal Detection |
+|---------------------------|---------------------|-------------------------------|
+| ![](Simulation%20Results/Eyes_open_on_raspberryPi5.jpeg) <br> *Eye open detection on Raspberry Pi 5.* | ![](Simulation%20Results/Stop_sign.jpeg) <br> *YOLO-based stop sign detection in driving environment.* | ![](Simulation%20Results/Person_and_Traffic_light_red.jpeg) <br> *Red light and pedestrian detected simultaneously.* |
+|  |  | ![](Simulation%20Results/traffic_light_Green_and_Person.jpeg) <br> *Green traffic light and person detection scenario.* |
+
+---
+
 ## 🧩 Dependencies
 
 Install required packages:
